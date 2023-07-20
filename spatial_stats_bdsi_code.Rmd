@@ -8,7 +8,7 @@ date: July 20, 2023
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE,message=F,warning=F)
-options(tigris_use_cache = TRUE)
+
 
 ```
 
@@ -18,7 +18,6 @@ options(tigris_use_cache = TRUE)
 ```{r}
 if (!require("tidycensus")) install.packages('tidycensus')
 if (!require("tidyverse")) install.packages('tidyverse')
-if (!require("tigris")) install.packages('tigris')
 if (!require("sf")) install.packages('sf')
 if (!require("units")) install.packages('units')
 if (!require("ggcorrplot")) install.packages('ggcorrplot')
@@ -28,7 +27,7 @@ if (!require("CARBayes")) install.packages('CARBayes')
 if (!require("GWmodel")) install.packages('GWmodel')
 if (!require("patchwork")) install.packages('patchwork')
 library(tidycensus);library(tidyverse)
-library(tigris);library(GWmodel)
+library(GWmodel)
 library(sf);library(CARBayes)
 library(spdep);library(units)
 library(car);library(ggcorrplot)
